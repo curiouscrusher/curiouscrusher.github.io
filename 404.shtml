@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Crash Landing</title>
+
+<style>
+#rocket {
+text-align:center;
+padding-top: 10%;
+}
+
+</style>
+
+
+
+
+</head>
+
+<body bgcolor="#f4f43e">
+
+<div id="rocket" >
+<img src="/img/404.jpg" width="90%">
+</div>
+
+</body>
+</html>
+
+<!-- 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+--> 
