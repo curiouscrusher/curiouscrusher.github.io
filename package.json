@@ -1,0 +1,21 @@
+{
+  "name": "Nathanielholland.com",
+  "version": "1.0.0",
+  "description": "Main site of Nate Holland",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/curiouscrusher/curiouscrusher.github.io.git"
+  },
+  "author": "Nate Holland",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}

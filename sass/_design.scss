@@ -1,0 +1,220 @@
+//////////////////////////////////////////
+// Design page styling
+//////////////////////////////////////////
+
+.design {
+	align-items: stretch;
+	align-content: stretch;
+	background-color: $super-light;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100vw;
+
+	&__hero {
+		@include infinite-row($max-width: 1400px);
+		background-color: $design-blue;
+		color: $white;
+		display: flex;
+		flex: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 350px;
+
+		&--logo {
+			background-color: $white;
+			border-radius: 50%;
+			box-shadow: 2px 0px 4px 0px rgba($black, .5);
+			display: flex;
+			width: 100px;
+			height: 100px;
+			z-index: 999;
+			transition: all .1s ease;
+
+			&-wrapper {
+				display: flex;
+				flex-grow: .75;
+				height: 100%;
+			}
+
+			@media screen and (min-width: 799px) {
+				height: 140px;
+				width: 140px;
+			}
+
+			&:hover {
+				// height: 155px;
+				// width: 155px;
+
+				svg {
+					// height: 100px;
+					// transition: all .5s ease;
+					// -webkit-transform:rotate(360deg);
+				}
+			}
+
+			svg {
+				// @include absolute-center;
+				height: 60px;
+				margin: auto;
+				transition: all .1s ease;
+
+				@media screen and (min-width: 799px) {
+					height: 85px;
+				}
+			}
+		}
+		
+		.main-nav {
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			flex: 100%;
+			justify-content: flex-end;
+
+			ul {
+				display: flex;
+				height: 60px;
+				justify-content: space-around;
+				list-style: none;
+				padding-left: 0;
+				width: 100%;
+
+				@media screen and (min-width: 480px) {
+					max-width: 480px;
+				}
+
+				li {
+					cursor: pointer;
+					display: flex;
+					font-size: 24px;
+					font-weight: 100;
+					flex-direction: column;
+					justify-content: space-around;
+
+					&.active { border-bottom: 1px solid $white; }
+				}
+			}
+		}
+
+		h1 {
+			display: flex;
+			flex: 0;
+			flex-grow: .5;
+		    padding-top: 1.5em;
+		}
+
+		h3 {
+			align-self: center;
+			display: flex;
+			flex: 1;
+			flex-grow: 2;
+		}
+	} // Hero
+
+	&__intro {
+		margin: 0 auto;
+		max-width: 550px;
+		padding: 2em 4em;
+		width: 100%;
+
+		p { @include merriweather-copy; }
+	}
+
+	&__latest-work {
+	    background: $white;
+	    box-shadow: 0px 3px 4px 0px rgba(161,161,161,0.50);
+	    text-align: center;
+	    margin: 0 auto 3em;
+	    max-width: 1400px;
+	    padding: 3em 0;
+	    width: 100%;
+
+	    ul {
+	    	display: flex;
+	    	flex-direction: row;
+	    	justify-content: center;
+	    	list-style: none;
+	    	padding: 0 2em;
+
+	    	@media screen and (max-width: 50em) {
+	    		flex-wrap: wrap;
+	    	}
+
+	    	li {
+	    		padding: 0 .5em;
+
+	    		@media screen and (max-width: 50em) {
+	    			margin-bottom: 1em;
+	    		}
+
+		    	img {
+		    		display: flex;
+		    		max-width: 255px;
+		    		width: 100%;
+
+		    		@media screen and (max-width: 50em) {
+		    			margin-bottom: 2em;
+		    		}
+		    	}
+		    }
+	    }
+
+	    h1 {
+	    	margin-bottom: 1em;
+	    }
+	} // Latest Work
+
+	&__case-studies {
+		@extend .design__latest-work;
+	    margin: 3em auto 8em;
+
+	    ul {
+	    	li {
+    		    display: flex;
+			    flex-direction: column;
+			    flex: 255px 0 0;
+
+			    // Hack for keeping case studies from overflowing
+			    // See about finding a better way of setting flex 
+			    // and avoiding overflow.
+			    @media screen and (max-width: 1070px) {
+			    	flex: initial;
+			    }
+
+			    &:nth-of-type(2) span,
+			    &:nth-of-type(3) span,
+			    &:nth-of-type(4) span {
+			    	height: 104px;
+			    	justify-content: flex-end;
+			    }
+
+			    &:nth-of-type(2) span { background-color: $brilliant-blue; }
+
+			    &:nth-of-type(3) span { background-color: $mustard-yellow; }
+
+			    &:nth-of-type(4) span { background-color: $light-red; }
+
+			    img {
+			    	margin-bottom: 0;
+			    }
+	    	}
+	    }
+
+	    &--title {
+	    	align-items: flex-start;
+	    	background-color: $bright-green;
+	    	display: flex;
+		    flex-direction: column;
+		    padding: 1em 0 .25em 1em;
+
+		    h2,
+		    p {
+		    	color: $white;
+		    	font-weight: $light;
+		    	margin: 0 0 .75em;
+		    	text-align: left;
+		    }
+	    }
+	}
+}

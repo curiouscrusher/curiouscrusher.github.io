@@ -1,0 +1,126 @@
+.inside {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.blink {
+	@include blink;
+}
+
+.homepage {
+	background-color: $design-blue;
+
+	&__development,
+	&__design {
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		text-align: center;
+		flex: 1 50%;
+
+		@media screen and (max-width: 50em) {
+			flex: 1 100%;
+		}
+
+		h2 {
+			font-family: HelveticaNeueLTStd-Hv;
+			font-size: 42px;
+			letter-spacing: 2.5px;
+			margin: 0;
+		}
+
+		.view-work {
+			border: 2px solid $white;
+			display: inline-block;
+			padding: .5em 1.5em;
+			transition: .3s ease-in-out;
+
+			&:hover {
+				background-color: $white;
+				color: $black;
+			}
+
+			@media screen and (min-width: 50em) {
+				margin-top: 1em;
+			}
+		}
+	}
+
+	&__development {
+		background-color: $terminal-green;
+		z-index: 999;
+
+		p {
+			font-family: Monaco;
+			font-size: 26px;
+		}
+	}
+
+	&__design {
+		z-index: 999;
+
+		p {
+			font-family: HelveticaNeueLTStd-Roman;
+			font-size: 26px;
+			letter-spacing: 1.54px;
+		}
+	}
+
+	&__branding {
+		@include absolute-center;
+		background: url('../img/logo.svg') center center no-repeat;
+		background-color: $white;
+		background-size: 50%;
+		border-radius: 50%;
+		box-shadow: 2px 0px 4px 0px rgba($black, .5);
+		width: 100px;
+		height: 100px;
+		z-index: 999;
+		transition: all .1s ease;
+
+		@media screen and (min-width: 799px) {
+			height: 140px;
+			width: 140px;
+		}
+
+		&:hover {
+			// Experimental scale effect for logo
+			// height: 155px;
+			// width: 155px;
+
+			svg {
+				// Experimental scale effect for logo
+				// height: 100px;
+				// transition: all .5s ease;
+				// -webkit-transform:rotate(360deg);
+			}
+		}
+
+		svg {
+			@include absolute-center;
+			height: 60px;
+			transition: all .1s ease;
+
+			@media screen and (min-width: 799px) {
+				height: 85px;
+			}
+		}
+	}
+
+	// Place the canvas
+	#circles {
+	position: absolute;
+	top: 0;
+	// Keep right for scaling
+	right: 0;
+	z-index: 1;
+}
+
+}
