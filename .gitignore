@@ -8,7 +8,7 @@ node_modules
 
 ##### Post Launch ######
 ## sass
-## bower_components
+bower_components
 ## gulpfile.js
 ## package.json
 ## bower.json
