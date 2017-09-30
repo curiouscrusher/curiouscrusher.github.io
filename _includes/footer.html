@@ -1,0 +1,48 @@
+<!-- Contact -->
+
+{% if page.title == "Hello There" %}
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/{{ site.email }}" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+	</div>
+</section>
+{% endif %}
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="copyright">
+				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
+	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
