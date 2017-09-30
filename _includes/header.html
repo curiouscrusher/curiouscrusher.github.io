@@ -3,7 +3,7 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style1"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<a href="{{ "" | absolute_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -14,7 +14,7 @@
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "landing" %}
-		        <li><a href="{{ "" | absolute_url }}/">Home</a></li>
+		        <li><a href="{{ "" | absolute_url }}">Home</a></li>
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
