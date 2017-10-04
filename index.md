@@ -31,13 +31,38 @@ nav-menu: true
         </a>
         <div class="content">
             <div class="inner">
-                <header class="major">
-                    <h3>Julia Landauer Racing</h3>
-                </header>
-                <p>Julia Landauer is the first female Nascar driver from New York City as well as a Stanford University graduate, and businesswoman. I designed her brand identity, including the logo, stationery, website, hero card, electronic press kit, and social networking pages....</p>
-                <ul class="actions">
-                    <li><a href="/2017/09/01/julia-landauer-racing.html" class="button">See More</a></li>
-                </ul>
+                <div class="row">
+                    <div class="10u -1u 12u$(small)">
+                        <header class="major">
+                            <h3>Julia Landauer Racing</h3>
+                        </header>
+                        <p>Julia Landauer is the first female Nascar driver from New York City as well as a Stanford University graduate, and businesswoman. I designed her brand identity, including the logo, stationery, website, hero card, electronic press kit, and social networking pages....</p>
+                        <ul class="actions">
+                            <li><a href="/2017/09/01/julia-landauer-racing.html" class="button">See More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <a href="/2017/05/17/askderm.html" class="image">
+            <img src="assets/images/site-askderm-square.jpg" alt="" data-position="25% 25%" />
+        </a>
+        <div class="content">
+            <div class="inner">
+                <div class="row">
+                    <div class="10u -1u 12u$(small)">
+                        <header class="major">
+                            <h3>Askderm</h3>
+                        </header>
+                        <p>Askderm is a cosmetics supply company that manages a number of sub-brands. My primary role in this project at Gauge was on the front-end development team, as well as consulting on Design &amp; UX throughout...</p>
+                        <ul class="actions">
+                            <li><a href="/2017/05/17/askderm.html" class="button">See More</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
