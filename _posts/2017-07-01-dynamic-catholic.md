@@ -18,16 +18,13 @@ square-image: assets/images/site-dynamic-square.jpg
 	        <header class="major">
 	            <h1>{{ page.title }}</h1>
 	        </header>
-	        <div class="content">
-	            {{ page.description }}
-	        </div>
 	    </div>
 	</section>
 
 	<section id="one">
 		<div class="inner">
 			<div class="8u -2u 12u$(small)">
-				<p>{{ page.descriptoin }}</p>
+				<p>{{ page.description }}</p>
 
 				<h3>Tech Utilized</h3>
 				<ul>

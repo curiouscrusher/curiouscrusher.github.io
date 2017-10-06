@@ -18,9 +18,6 @@ square-image: assets/images/site-jlr-square.jpg
 	        <header class="major">
 	            <h1>{{ page.title }}</h1>
 	        </header>
-	        <div class="content">
-	            {{ page.description }}
-	        </div>
 	    </div>
 	</section>
 
