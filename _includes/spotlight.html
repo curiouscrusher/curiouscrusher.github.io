@@ -1,0 +1,29 @@
+{% if site.tiles-source == 'posts' %}
+<section id="two" class="spotlights">
+        {% for post in site.posts limit:site.tiles-count %}
+                {% if post.square-image %}
+                <section>
+                        <a href="{{ post.url  | relative_url }}" class="image">
+                            <img src="{{ post.square-image }}" alt="" data-position="top center" />
+                        </a>
+
+                        <div class="content">
+                            <div class="inner">
+                                <div class="row">
+                                    <div class="10u -1u 12u$(small)">
+                                        <header class="major">
+                                            <h3>{{ post.title }}</h3>
+                                        </header>
+                                        <p>{{ post.description | truncatewords: 33 }}</p>
+                                        <ul class="actions">
+                                            <li><a href="{{ post.url  | relative_url }}" class="button">See More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                {% endif %}
+	{% endfor %}
+</section>
+{% endif %}
