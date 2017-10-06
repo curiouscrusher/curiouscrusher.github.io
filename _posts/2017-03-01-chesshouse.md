@@ -3,8 +3,9 @@ layout: page
 title: Chess House
 link: /2017/03/01/chesshouse.html
 nav-menu: true
-description: 
+description: I had the opportunity to lead the development of a Volusion to Shopify project at Gauge for a long-time family business based in Washington, Chess House. This project involved some highly technical aspects, from complete data migration, to one-of-a-kind bundled products feature.
 image: assets/images/site-chesshouse-1.jpg
+square-image: assets/images/site-chesshouse-square.jpg
 ---
 
 <div id="main" class="alt">
@@ -26,7 +27,7 @@ image: assets/images/site-chesshouse-1.jpg
 	<section id="one">
 		<div class="inner">
 			<div class="8u -2u 12u$(small)">
-				<p>I had the opportunity to lead the development of a Volusion to Shopify project at Gauge for a long-time family business based in Washington, Chess House. This project involved some highly technical aspects, from complete data migration, to one-of-a-kind bundled products feature.</p>
+				<p>{{ page.description }}</p>
 
 				<h3>Tech Utilized</h3>
 				<ul>
