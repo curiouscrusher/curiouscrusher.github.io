@@ -39,12 +39,12 @@ square-image: assets/images/site-jlr-square.jpg
 
 			<hr class="major" />
 
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-jlr-1.jpg" alt="" /></span>
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-jlr-1.jpg" alt="{{ page.title }} Website Image" /></span>
 
 			<div class="box alt">
 				<div class="row uniform">
-					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-jlr-2.jpg" alt="" /></span></div>
-					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-jlr-3.jpg" alt="" /></span></div>
+					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-jlr-2.jpg" alt="{{ page.title }} Website Image" /></span></div>
+					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-jlr-3.jpg" alt="{{ page.title }} Website Image" /></span></div>
 				</div>
 			</div>
 

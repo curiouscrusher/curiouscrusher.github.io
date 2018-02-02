@@ -36,16 +36,16 @@ square-image: assets/images/site-dynamic-square.jpg
 
 			<hr class="major" />
 
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-1.jpg" alt="" /></span>
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-1.jpg" alt="{{ page.title }} Website Image" /></span>
 
 			<div class="box alt">
 				<div class="row uniform">
-					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-2.jpg" alt="" /></span></div>
-					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-3.jpg" alt="" /></span></div>
+					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-2.jpg" alt="{{ page.title }} Website Image" /></span></div>
+					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-3.jpg" alt="{{ page.title }} Website Image" /></span></div>
 				</div>
 			</div>
 
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-4.jpg" alt="" /></span>
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-dynamic-4.jpg" alt="{{ page.title }} Website Image" /></span>
 
 		</div>
 	</section>
