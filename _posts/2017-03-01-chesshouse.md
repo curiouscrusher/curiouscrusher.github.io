@@ -13,7 +13,7 @@ square-image: assets/images/site-chesshouse-square.jpg
 	<section id="banner" class="style1">
 	    <div class="inner">
 	        <span class="image">
-	            <img src="{{ site.baseurl }}/{{ page.image }}" alt="Chess House">
+	            <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }} Website Image">
 	        </span>
 	        <header class="major">
 	            <h1>{{ page.title }}</h1>
@@ -29,6 +29,8 @@ square-image: assets/images/site-chesshouse-square.jpg
 				<h3>Tech Utilized</h3>
 				<ul>
 					<li>Shopify &amp; Shopify API</li>
+					<li>Liquid</li>
+					<li>JS/jQuery</li>
 					<li>SASS</li>
 					<li>SQL</li>
 					<li>Node Js</li>
@@ -38,12 +40,12 @@ square-image: assets/images/site-chesshouse-square.jpg
 
 			<hr class="major" />
 
-			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-chesshouse-1.jpg" alt="" /></span>
+			<span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-chesshouse-1.jpg" alt="{{ page.title }} Website Image" /></span>
 
 			<div class="box alt">
 				<div class="row uniform">
-					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-chesshouse-2.jpg" alt="" /></span></div>
-					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-chesshouse-3.jpg" alt="" /></span></div>
+					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-chesshouse-2.jpg" alt="{{ page.title }} Website Image" /></span></div>
+					<div class="6u 12u$(small)"><span class="image fit"><img src="{{ site.baseurl }}/assets/images/site-chesshouse-3.jpg" alt="{{ page.title }} Website Image" /></span></div>
 				</div>
 			</div>
 
