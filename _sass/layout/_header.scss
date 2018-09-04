@@ -45,11 +45,8 @@
 
 			&:hover {
 				strong {
-					background-color: _palette(accent4);
-				}
-
-				span {
-					color: _palette(accent4);
+					background-color: _palette(accent1);
+					color: _palette(fg) !important;
 				}
 			}
 

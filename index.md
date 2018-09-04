@@ -2,7 +2,7 @@
 title: Hello There
 layout: landing
 description: 
-image: assets/images/banner-code.jpg
+image: assets/images/jawa-banner.jpg
 nav-menu: true
 ---
 
