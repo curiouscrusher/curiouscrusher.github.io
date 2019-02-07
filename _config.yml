@@ -6,7 +6,7 @@ subtitle: Developer and Designer
 email: natethedeveloper@gmail.com
 description: 
 baseurl: "" # just-a-test
-url: "http://nateholland.site" # the base hostname & protocol for your site
+url: "https://nateholland.site" # the base hostname & protocol for your site
 author:
 street_address: 
 city: 
